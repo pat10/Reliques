@@ -4,4 +4,4 @@
 *.inform/Metadata.iFiction
 *.inform/Release.blurb
 *.inform/Skein.skein
-*Materials/Release
+*.materials/Release
