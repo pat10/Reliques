@@ -1,0 +1,7 @@
+*.inform/Build
+*.inform/Index
+*.inform/manifest.plist
+*.inform/Metadata.iFiction
+*.inform/Release.blurb
+*.inform/Skein.skein
+*Materials/Release
