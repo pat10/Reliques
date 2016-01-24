@@ -7,3 +7,5 @@ release 1, serial 101025, 6F95
 6L02 Build - Changes required.
 
 6L38 Build - Changes required. Can't release with a file.
+
+6M62 Build - Can release with a file. Mission complete.
