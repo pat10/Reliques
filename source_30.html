@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Graham Nelson, updated to 6M62 by Shin - The Reliques of Tolti-Aph — 32 of 57</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Graham Nelson, updated to 6M62 by Shin" />
+  <meta name="description" content="A page for the game The Reliques of Tolti-Aph by Graham Nelson, updated to 6M62 by Shin." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div class = "container">
+
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></span>
+</div>
+
+<div class ="sourceintroduction">
+	<h1>
+		<span>The Reliques of Tolti-Aph</span> <span class="pagination">— 32 of 57</span>
+	</h1>
+	<h2>
+		<span>Graham Nelson, updated to 6M62 by Shin</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 1</span>
+	</div>
+</div>
+
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_29.html">Previous</a></li><li><a href="source_31.html">Next</a></li>
+</ul>
+</div>
+
+<div class = "source">
+<p class="indent0"><span class="heading">Section E(c) - Spatial coordinates</span></p><p class="indent0">A spatial coordinate is a kind of value. &lt;9,24,24&gt; specifies a spatial coordinate with parts maze level, easting (without leading zeros), northing (without leading zeros). A room has a spatial coordinate called grid position. Definition: A room is unlocated rather than located if its grid position is &lt;0,0,0&gt;.<a name="note1ref"></a><span class="notecue"><a href="#note1">[1]</a></span></p><p class="indent0">To decide which number is the current maze level:</p><p class="indent1">let L be the maze level part of the grid position of the location;</p><p class="indent1">decide on L.</p><p class="indent0">The previous maze level is a number that varies.</p><p class="indent0">Every turn:</p><p class="indent1">if the location is a labyrinth room and the location is not the Hedge Archway:</p><p class="indent2">if the current maze level is not the previous maze level:</p><p class="indent3">if the current maze level is 1, say &quot;<span class="quote">You blink in the shadowy, but natural twilight, feeling a faint breeze on your face once again. You are back in the familiar hedge-maze at the surface.</span>&quot;;</p><p class="indent3">if the previous maze level is 1, say &quot;<span class="quote">Underground, the labyrinth continues with clean-cut, magically lit passages.</span>&quot;;</p><p class="indent1">now the previous maze level is the current maze level.</p><p class="indent0">A direction has a spatial coordinate called vector. North has vector &lt;0,0,1&gt;. South has vector &lt;0,0,24&gt;. East has vector &lt;0,1,0&gt;. West has vector &lt;0,24,0&gt;. Down has vector &lt;1,0,0&gt;. Up has vector &lt;9,0,0&gt;.<a name="note2ref"></a><span class="notecue"><a href="#note2">[2]</a></span></p><p class="indent0">Definition: A direction is non-vectorial rather than vectorial if its vector is &lt;0,0,0&gt;.<a name="note3ref"></a><span class="notecue"><a href="#note3">[3]</a></span></p><p class="indent0">Definition: A direction is vertical if it is up or it is down.</p><p class="indent0">To decide which spatial coordinate is the vector sum of (V1 - a spatial coordinate) and (V2 - a spatial coordinate):</p><p class="indent1">let L be the maze level part of V1 plus the maze level part of V2;</p><p class="indent1">let L be the remainder after dividing L by 10;</p><p class="indent1">let E be the easting part of V1 plus the easting part of V2;</p><p class="indent1">let E be the remainder after dividing E by 25;</p><p class="indent1">let N be the northing part of V1 plus the northing part of V2;</p><p class="indent1">let N be the remainder after dividing N by 25;</p><p class="indent1">if L is 0 or L is 9, decide on &lt;0,0,0&gt;;</p><p class="indent1">if E is 0 or E is 24, decide on &lt;0,0,0&gt;;</p><p class="indent1">if N is 0 or N is 24, decide on &lt;0,0,0&gt;;</p><p class="indent1">let the sum be the spatial coordinate with maze level part L easting part E northing part N;</p><p class="indent1">decide on the sum.<a name="note4ref"></a><span class="notecue"><a href="#note4">[4]</a></span></p><p class="indent0">To decide which spatial coordinate is the vector difference of (V1 - a spatial coordinate) and (V2 - a spatial coordinate):</p><p class="indent1">let L be the maze level part of V1 minus the maze level part of V2;</p><p class="indent1">let L be the remainder after dividing L by 10;</p><p class="indent1">let E be the easting part of V1 minus the easting part of V2;</p><p class="indent1">let E be the remainder after dividing E by 25;</p><p class="indent1">let N be the northing part of V1 minus the northing part of V2;</p><p class="indent1">let N be the remainder after dividing N by 25;</p><p class="indent1">let the sum be the spatial coordinate with maze level part L easting part E northing part N;</p><p class="indent1">decide on the sum.</p>
+</div>
+
+<div class ="notes">
+<p><span class="notesheading">Notes</span></p>
+<p><a name="note1"></a><span class="notetext"><a href="#note1ref">[1]</a>.  Inform does not automatically construct un- prefixes: they're too unpredictable in English. For instance, in ROTA "undead" has a definition which is by no means equivalent to "not dead".</span></p>
+<p><a name="note2"></a><span class="notetext"><a href="#note2ref">[2]</a>.  As this demonstrates, Inform allows us to add to or modify even the most fundamental built-in concepts.</span></p>
+<p><a name="note3"></a><span class="notetext"><a href="#note3ref">[3]</a>.  For instance, "northeast" and "outside" are non-vectorial directions in this sense. The Maze occupies a cubical lattice and never has connections in those directions.</span></p>
+<p><a name="note4"></a><span class="notetext"><a href="#note4ref">[4]</a>.  All of that remainder-after-dividing stuff is to enable us to have relative vectors with negative entries, in effect. Thus a single move west is achieved by adding <0,24,0> to the position, because 24 is the same as -1 when we are dealing only with numbers in the range 0 to 24. However, the maze does not "wrap around": the legal grid positions are <L,E,N> where L must be 1 to 8, and E and N must be 1 to 23, with the special value <0,0,0> being reserved as a "no position at all" value.</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

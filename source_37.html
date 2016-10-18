@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Graham Nelson, updated to 6M62 by Shin - The Reliques of Tolti-Aph — 39 of 57</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Graham Nelson, updated to 6M62 by Shin" />
+  <meta name="description" content="A page for the game The Reliques of Tolti-Aph by Graham Nelson, updated to 6M62 by Shin." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div class = "container">
+
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></span>
+</div>
+
+<div class ="sourceintroduction">
+	<h1>
+		<span>The Reliques of Tolti-Aph</span> <span class="pagination">— 39 of 57</span>
+	</h1>
+	<h2>
+		<span>Graham Nelson, updated to 6M62 by Shin</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 1</span>
+	</div>
+</div>
+
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_36.html">Previous</a></li><li><a href="source_38.html">Next</a></li>
+</ul>
+</div>
+
+<div class = "source">
+<p class="indent0"><span class="heading">Section E(j) - The force labyrinth spell</span></p><p class="indent0"><span class="comment">[All players are given this spell as a sort of Get Out of Jail Free card, but it tends not to be as good as they imagine. It forces a map connection to work between a given pair of adjacent caves, and can be used if one is stranded by one of the Earthquake hazards.]</span></p><p class="indent0">Instead of casting force labyrinth at when Terra Incognita is closed, say &quot;<span class="quote">The never-children laugh once again.</span>&quot;</p><p class="indent0">Before casting force labyrinth at:</p><p class="indent1">unless the location is a labyrinth room, say &quot;<span class="quote">That spell has efficacy only in the Maze of Royal Beasts.</span>&quot; instead.<a name="note1ref"></a><span class="notecue"><a href="#note1">[1]</a></span></p><p class="indent0">To force a path (way - direction) from (place - room):</p><p class="indent1">let the current position be the grid position of the location;</p><p class="indent1">let the new position be the vector sum of the current position and the vector of the way;</p><p class="indent1">if the new position is &lt;0,0,0&gt;, stop;</p><p class="indent1">let the new room be the room at the new position;</p><p class="indent1">if the new room is Solid Rock:</p><p class="indent2">if a labyrinth room is acceptable:</p><p class="indent3">let the new room be a random acceptable labyrinth room;</p><p class="indent3">let the current position be the grid position of the location;</p><p class="indent3">position the new room at the new position;</p><p class="indent2">otherwise:</p><p class="indent3">stop;</p><p class="indent1">now the new room is Earthquake-undamaged;</p><p class="indent1">change the way exit of the location to the new room;</p><p class="indent1">let the reverse way be the opposite of the way;</p><p class="indent1">change the reverse way exit of the new room to the location.</p><p class="indent0">Effect of casting force labyrinth at:</p><p class="indent1">record outcome &quot;<span class="quote">the whole area before you fills with mist, momentarily leaving your mind a blur</span>&quot;;</p><p class="indent1">if the room north from the location is Solid Rock, force a path north from the location;</p><p class="indent1">if the room east from the location is Solid Rock, force a path east from the location;</p><p class="indent1">if the room south from the location is Solid Rock, force a path south from the location;</p><p class="indent1">if the room west from the location is Solid Rock, force a path west from the location;</p><p class="indent1">continue the action.</p>
+</div>
+
+<div class ="notes">
+<p><span class="notesheading">Note</span></p>
+<p><a name="note1"></a><span class="notetext"><a href="#note1ref">[1]</a>.  This is a before rule, unconventionally, to stop players from wasting precious STR finding out what the spell is supposed to do.</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

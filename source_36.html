@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Graham Nelson, updated to 6M62 by Shin - The Reliques of Tolti-Aph — 38 of 57</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Graham Nelson, updated to 6M62 by Shin" />
+  <meta name="description" content="A page for the game The Reliques of Tolti-Aph by Graham Nelson, updated to 6M62 by Shin." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div class = "container">
+
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></span>
+</div>
+
+<div class ="sourceintroduction">
+	<h1>
+		<span>The Reliques of Tolti-Aph</span> <span class="pagination">— 38 of 57</span>
+	</h1>
+	<h2>
+		<span>Graham Nelson, updated to 6M62 by Shin</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 1</span>
+	</div>
+</div>
+
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_35.html">Previous</a></li><li><a href="source_37.html">Next</a></li>
+</ul>
+</div>
+
+<div class = "source">
+<p class="indent0"><span class="heading">Section E(i) - Exploring the labyrinth</span></p><p class="indent0">Definition: A labyrinth room is acceptable if it is unplaced and its minimum level &lt;= the current maze level.</p><p class="indent0">Before going a direction (called this way) to Terra Incognita:</p><p class="indent1">if the location is unplaced or this way is not vectorial, say &quot;<span class="quote">Oops! You should only reach terra incognita from a placed room via a vectorial direction.</span>&quot;; <a name="note1ref"></a><span class="notecue"><a href="#note1">[1]</a></span> </p><p class="indent1">if Terra Incognita is closed, say &quot;<span class="quote">The way is barred by some enchantment of the never-children.</span>&quot; instead;</p><p class="indent1">let possibles be the number of acceptable labyrinth rooms;</p><p class="indent1">if possibles is 0:</p><p class="indent2">retrieve inaccessible labyrinth rooms;</p><p class="indent2">let possibles be the number of acceptable labyrinth rooms;</p><p class="indent2">if possibles is 0:<a name="note2ref"></a><span class="notecue"><a href="#note2">[2]</a></span></p><p class="indent3">now Terra Incognita is closed;</p><p class="indent3">say &quot;<span class="quote">In your mind, you hear the scornful laughter of the never-children. 'Magic-uther has run out of labyrinth!' And certainly the way is blocked.</span>&quot; instead;</p><p class="indent1">if possibles &gt; 0:</p><p class="indent2">let the new room be a random acceptable labyrinth room;</p><p class="indent2">let the current position be the grid position of the location;</p><p class="indent2">let the new position be the vector sum of the current position and the vector of this way;</p><p class="indent2">position the new room at the new position;</p><p class="indent1">otherwise:</p><p class="indent2">change this way exit of the location to Solid Rock;</p><p class="indent1">try going this way instead.</p><p class="indent0">After going up to a labyrinth room from a non-ascending labyrinth room: say &quot;<span class="quote">You take the well-remembered secret staircase up.</span>&quot;; continue the action.</p><p class="indent0">After going down to a labyrinth room from a non-descending labyrinth room: say &quot;<span class="quote">You take the well-remembered secret staircase down.</span>&quot;; continue the action.</p><p class="indent0">Instead of going to Solid Rock:</p><p class="indent1">say &quot;<span class="quote">After a few strides, the way gives out into </span>&quot;;</p><p class="indent1">if the current maze level is 1, say &quot;<span class="quote">dense, impenetrable undergrowth</span>&quot;;</p><p class="indent1">otherwise say &quot;<span class="quote">solid rock</span>&quot;;</p><p class="indent1">say &quot;<span class="quote">. You step back again.</span>&quot;</p>
+</div>
+
+<div class ="notes">
+<p><span class="notesheading">Notes</span></p>
+<p><a name="note1"></a><span class="notetext"><a href="#note1ref">[1]</a>.  This never happens, of course: it was put in to test the game.</span></p>
+<p><a name="note2"></a><span class="notetext"><a href="#note2ref">[2]</a>.  I.e., if even retrieving unvisited rooms didn't help: now the maze really is exhausted.</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
